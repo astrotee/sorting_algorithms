@@ -1,4 +1,4 @@
-all: bubble insertion select quick shell cocktail
+all: bubble insertion select quick shell cocktail counting
 
 bubble: 0-bubble_sort.c 0-main.c print_array.c
 	gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 0-bubble_sort.c 0-main.c print_array.c -o bubble -g
@@ -17,3 +17,6 @@ shell: 100-main.c 100-shell_sort.c print_array.c
 
 cocktail: 101-main.c 101-cocktail_sort_list.c print_list.c
 	gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 101-main.c 101-cocktail_sort_list.c print_list.c -o cocktail
+
+counting: 102-main.c 102-counting_sort.c print_array.c
+	gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 102-main.c 102-counting_sort.c print_array.c -o counting
