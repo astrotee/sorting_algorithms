@@ -19,8 +19,11 @@ typedef struct listint_s
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void swap_nodes(listint_t *a, listint_t *b);
+void swap_values(int *a, int *b);
 void split_merge(int *a, int begin, int end, int *b);
 void sort_merge(int *a, int begin, int mid, int end, int *b);
+void heapify(int *array, size_t size);
+void siftdown(int *array, size_t root, size_t end, size_t size);
 
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
@@ -31,5 +34,6 @@ void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
+void heap_sort(int *array, size_t size);
 
 #endif

@@ -1,4 +1,4 @@
-all: bubble insertion select quick shell cocktail counting merge
+all: bubble insertion select quick shell cocktail counting merge heap
 
 bubble: 0-bubble_sort.c 0-main.c print_array.c
 	gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 0-bubble_sort.c 0-main.c print_array.c -o bubble -g
@@ -23,3 +23,6 @@ counting: 102-main.c 102-counting_sort.c print_array.c
 
 merge: 103-main.c 103-merge_sort.c print_array.c
 	gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 103-main.c 103-merge_sort.c print_array.c -o merge -g
+
+heap: 104-main.c 104-heap_sort.c print_array.c
+	gcc -Wall -Wextra -Werror -pedantic  -std=gnu89 104-main.c 104-heap_sort.c print_array.c -o heap -g
